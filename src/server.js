@@ -9,7 +9,7 @@ const server = http.createServer((req, res) => {
     return res
       .setHeader('Content-type', 'application/json')
       .end(JSON.stringify(users))
-  }
+  }  
 
   if(method === 'POST' && url === '/users') {
     users.push({
