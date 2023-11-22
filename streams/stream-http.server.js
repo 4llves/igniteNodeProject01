@@ -18,7 +18,7 @@ const server = http.createServer(async (req, res) => {
     buffers.push(chunk)
   }
 
-  const fullStreamContent = Buffer.concat(buffers.toString())
+  const fullStreamContent = Buffer.concat(buffers).toString()
 
   console.log(fullStreamContent)
 
